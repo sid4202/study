@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf8">
+        <title>КОТИКИ</title>
+    </head>
+    <body>
+        <!--All data from form goes to action address, here it is "/submit_photo"-->
+        <form action="/submit_photo">
+            <input type="text" placeholder="photo URL" required> <!--Creates text box-->
+            <br>
+            <button type="submit">Submit</button> <!--Creates submit button-->
+    
+            <!--required makes button unabled untill input text box has text-->
+            <!--Submit type of buttons sends info from inputs to the form address-->
+
+            <lable for="private">
+                <input id="private" type="radio" name="private-public"> private
+            </lable>
+
+            <lable for="is_NSFW">
+                <input id="is_NSFW" type="checkbox" name="attributes">is nsfw
+            </lable>
+            <br>
+            <lable for="is_visible">
+                <input id="is_visible" type="checkbox" name="attributes" checked>is visible
+            </lable>
+            <lable for="is_cringe">
+                <input id="is_cringe" type="checkbox" name="attributes">is cringe
+            </lable>
+
+            
+            <label for="public">
+                <input id="public" type="radio"name="private-public"> public
+            </label>
+
+            <!-- checked makes radio button or checkbox checked by default  -->
+            <!--checkboxes work like radio buttons? groups, text on them, but you can pick more than 1-->
+            <!--for makes connection by id given-->
+            <!--name groups radio buttons, so you can pick only one -->
+            <!--type radio creates radio button-->
+            <!--label tag will make possible checking the radio button when clicking on text-->
+        </form>
+    </body>
+</html>
